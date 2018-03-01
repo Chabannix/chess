@@ -2,7 +2,6 @@ from pion import Pion
 
 class joueurNoir:
     def __init__(self):
-        print "init couleur"
         self.pion1 = Pion(1,7)
         self.pion2 = Pion(2,7)
         self.pion3 = Pion(3,7)

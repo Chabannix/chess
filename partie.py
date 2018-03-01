@@ -5,7 +5,6 @@ from case import Case
 class Partie:
 
     def __init__(self):
-        print "init"
         self.joueurNoir = joueurNoir()
         self.joueurBlanc = joueurBlanc()
         x = []
