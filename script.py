@@ -7,9 +7,18 @@ import re
 def parseCoup(str):
     
     ret = re.match("^[PTCFDR][a-h][1-8][\ ][a-h][1-8]", str)
+    
     if ret == None:
         print"Erreur : taper un coup valide"
         return 0
+
+    elif str[0] == 'P':
+        if str[1] != str[4]:
+            print"Erreur : un pion ne bouge qu'en ligne droite, taper un coup valide"
+            return 0
+        elif int(str[5]) - int(str[2]) != 1:
+            print"Erreur : un pion ne peut avancer que d'une case, taper un coup valide"
+            return 0
     else:
         ma_partie.echequier[1][1].statut = "occupe"
         return 1
