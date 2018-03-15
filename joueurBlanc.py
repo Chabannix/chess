@@ -1,15 +1,17 @@
-from pion import Pion
+import sys
+sys.path.insert(0, "/home/damien/Documents/chess/piece/")
+import pion
 
 class joueurBlanc:
     def __init__(self):
-        self.pion1 = Pion(1,2)
-        self.pion2 = Pion(2,2)
-        self.pion3 = Pion(3,2)
-        self.pion4 = Pion(4,2)
-        self.pion5 = Pion(5,2)
-        self.pion6 = Pion(6,2)
-        self.pion7 = Pion(7,2)
-        self.pion8 = Pion(8,2)
+        self.pion1 = pion.Pion(1,2)
+        self.pion2 = pion.Pion(2,2)
+        self.pion3 = pion.Pion(3,2)
+        self.pion4 = pion.Pion(4,2)
+        self.pion5 = pion.Pion(5,2)
+        self.pion6 = pion.Pion(6,2)
+        self.pion7 = pion.Pion(7,2)
+        self.pion8 = pion.Pion(8,2)
 
         self.tour1 = 1 
         self.tour2 = 1
